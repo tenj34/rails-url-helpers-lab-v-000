@@ -9,7 +9,7 @@ class StudentsController < ApplicationController
     @students = Student.find_by_id(params[:id])
   end
 
-  def activate 
+  def activate
 
   end
 
