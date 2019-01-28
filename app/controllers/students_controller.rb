@@ -13,7 +13,6 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
     @student.toggle!(:active) # toggle
     redirect_to student_path(@student)
-
   end
 
   private
