@@ -9,6 +9,10 @@ class StudentsController < ApplicationController
     @students = Student.find_by_id(params[:id])
   end
 
+  def activate 
+
+  end
+
   def set_student
     @student = Student.find(params[:id])
     @student.toggle!(:active) # toggle
